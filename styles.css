@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+  }
+h1.title{
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: 'Allura', cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+p{
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #a9a9a9;
+}
+
+.btn a {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid #fb2274;
+    color: #fb2274;
+    display: block;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.main_container{
+	position: relative;
+}
+
+/* Navigation Bar */
+.navbar{
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color:rgba(0, 0, 0, 0.493);
+}
+
+
+.logo a{
+	font-size: 32px;
+	color: #fb2274;
+}
+
+.navbar_items ul{
+	display: flex;
+}
+
+.navbar_items ul li{
+	margin: 0 10px;
+}
+
+.navbar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.navbar_items ul li a:hover{
+	
+	color: orange;
+	text-decoration: underline;
+}
+
+
+/* banner_image */
+.banner_image{
+	background: url('images/p3.jpg') no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner_content{
+	text-align: center;
+	color: #fff;
+}
+
+.banner_content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+
+.banner_content h1 span{
+	color: #fb2274;
+}
+
+
+/* About */
+.about,
+.services,
+.contactus,
+.ourteam{
+	text-align: center;
+	padding: 5% 10%;
+}
+
+/* Services */
+.services{
+	background: #f5f5f5;
+}
+
+.diff_services {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diff_services .diff_services_item {
+    width: 30%;
+}
+
+.diff_services .diff_services_item img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.diff_services .diff_services_item h3 {
+    color: #fb2274;
+    margin-bottom: 15px;
+}
+
+/* Contact us */
+.form_wrapper .form_input{
+	margin-bottom: 30px;
+}
+
+.form_wrapper .form_input input[type="text"]{
+	width: 60vw;
+	padding: 12px 20px; 
+	border: 1px solid #ccc;
+}
+
+.form_wrapper .form_input textarea{
+	width: 60vw;
+	padding: 12px 20px; 
+	height: 80px;
+	resize: none;
+	border: 1px solid  #ccc;
+}
+.form_wrapper h3{
+text-align: left;
+margin-left: 120px;
+}
+
+.btn a:hover{
+	color: #000;
+	background-color: rgba(255, 145, 0, 0.678);
+	border: 2px solid #000;
+	transform: scale(1.1);
+	
+}
+
+
+
+
+
+/* our team */
+.ourteam{
+	background: #fff;
+}
+
+.ourteam_wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.ourteam_wrapper .team{
+	display: flex;
+	justify-content: space-between;
+}
+
+.ourteam_wrapper .team-1.team{
+	margin-bottom: 25px;
+}
+
+.ourteam_wrapper .team_members{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.ourteam_wrapper .team_members img{
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all 0.5s ease;
+}
+
+.ourteam_wrapper .team_members:hover img{
+	transform: scale(1.1);
+}
+
+/* footer */
+.footer{
+	width: 100%;
+	height: 200px;
+	background: #444444;
+	padding: 20px 0;
+}
+
+.fftrr{
+	background-color:#000;
+	text-align: center;
+	padding: 15px;
+
+
+}
+
+.fftrr a{
+	color: #fff;
+
+}
+
+
+
+@media (max-width: 720px){
+
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.logo{
+		margin-bottom: 25px;
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+	}
+
+	.banner_content{
+		margin-top: 35px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carrousel {
+	background: #F5F5F5;
+	text-align: center;
+	padding: 4em 0;
+	height: 250px;
+	max-width: 100%;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+  }
+  .carrousel h2 {
+	margin: 0;
+	margin-top: -1.7em;
+	padding: 0;
+	font-size: 1em;
+	text-align: center;
+	color: #FB2274;
+  }
+  .carrousel .slides {
+	width: 400%;
+	left: 0;
+	padding-left: 0;
+	padding-top: 1em;
+	overflow: hidden;
+	list-style: none;
+	position: relative;
+   
+	-webkit-transition: transform .5s;
+	-moz-transition: transform .5s;
+	-o-transition: transform .5s;
+	transition: transform .5s;
+  }
+  .carrousel .slides li {
+	width: 25%;
+	position: relative;
+	float: left;
+  }
+  .carrousel li p{
+	margin-top: 0;  
+  }
+  .carrousel li q {
+	max-width: 90%;
+	margin: auto;
+	color: #666666;
+	font-size: 1.3em;
+	font-weight: bold;
+  }
+
+  .carrousel li img {
+	width: 3em;
+	height: 3em;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-left: -1.5em;
+	margin-right: 0.5em;
+	vertical-align: middle;
+  }
+
+  .carrousel li span.author {
+	margin-top:0.5em;
+	font-size: 1.2em;
+	color: #777777;
+	display: block;
+  }
+
+  .carrousel .slidesNavigation {
+	display: block;
+	list-style: none;
+	text-align: center;
+	bottom: 1em;
+	/*--- Centering trick---*/
+	  /* Absolute positioning*/
+	  position: absolute; 
+	  /* Abosulte positioning*/
+	  width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+	  left: 50%; /*Centering de element*/
+	  margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
+  }
+  .carrousel input {
+	display: none;
+  }
+  .carrousel .slidesNavigation label {
+	float: left;
+	margin: 6px;
+	display: block;
+	height: 10px;
+	width: 10px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: solid 2px #2980b9;
+	font-size: 0;
+  }
+  /* You have to repeat this with each slide
+  TODO: make it easier with SCSS
+  25% movement 100/slides-num
+  */
+  #radio-1:checked ~ .slides {
+	transform: translateX(0%);
+  }
+  #radio-2:checked ~ .slides {
+	transform: translateX(-25%);
+  }
+  #radio-3:checked ~ .slides {
+	transform: translateX(-50%);
+  }
+  #radio-4:checked ~ .slides {
+	transform: translateX(-75%);
+  }
+   
+   
+  .carrousel .slidesNavigation label:hover {
+	 cursor: pointer;
+  }
+
+  .carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+  .carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+  .carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+  .carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+	background: #2980b9;
+  }
+
+#creation{
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	text-align: center;
+	margin-left: 40%;
+	margin-top: 15px;
+	
+}
+#creation h4{
+	padding-top: 7px;
+
+}
+
+  #compny{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	text-align: center;
+	/* border: 2px solid red; */
+	margin-bottom: 80px;
+	margin-left: 3%;
+	margin-top: 40px;
+	color: #fff;
+
+  }
+  #compny h4,h3{
+	  /* font-size: 20px; */
+	  padding: 10px 2px;
+	  
+  }
+
+  #ftrcontact{
+      color: #fff;	  
+	  display: flex;
+	  flex-direction: column;
+	  position: absolute;
+	  right: 0;
+      text-align: left;
+	  /* border: 2px solid red; */
+	  /* margin-bottom: 50px; */
+	margin-top: 15px;
+	  margin-right: 3%;
+}
+
+#ftrcontact h4{
+	
+	padding: 5px 2px;
+	font-size: 15px;
+}
+
+#ftrcontact h3{
+text-align: center;
+
+}
+
+
+
+@media (max-width: 800px){
+
+	.footer h3,h4{
+		font-size: 14px;
+		padding: 0;
+		margin: 0;
+	}
+
+
+	#ftrcontact h3, h4{
+		font-size: 14px;
+		padding: 0;
+		margin: 0;
+	}
+
+}
+@media (max-width: 710px){
+
+	.footer h3, h4{
+		font-size: 10px;
+	}
+	#ftrcontact h3{
+		font-size: 10px;
+	}
+	#ftrcontact h4{
+		font-size: 10px;
+
+	}
+
+
+}
+
+@media (max-width: 500px){
+
+	.footer h3,h4{
+		font-size: 8px;
+	}
+	#ftrcontact h3,h4{
+		font-size: 8px;
+	}
+	#creation{
+		right: 40px; 
+
+
+	}
+	#ftrcontact{
+		margin-top: 100px;
+		margin-right: 100px;
+		
+	}
+	.footer{
+		width: 100%;
+		height: 250px;
+	}
+
+}
