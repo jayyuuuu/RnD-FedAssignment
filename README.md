@@ -1,2 +1,2 @@
 # RnD-FedAssignment
-RECENT &amp; DECENT....        a Front-End-Design project
+RECENT &amp; DECENT....        a Front-End-Design project.
